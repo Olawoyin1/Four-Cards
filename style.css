@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red */
+}
+
+@font-face {
+    font-family: poppins200;
+    src: url("./Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: poppins400;
+    src: url("./Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: poppins600;
+    src: url("./Poppins-SemiBold.ttf");
+}
+
+body{
+    font-family: poppins200;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(234, 12%, 34%);
+}
+
+p{
+    color:  hsl(229, 6%, 66%);
+}
+
+/*HEADER SECTION*/
+header{
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+
+}
+
+h1{
+    font-weight: 200;
+    
+}
+
+h1 span{
+    font-family: poppins600;
+    font-weight: 600;
+}
+/*HEADER SECTION ENDS HERE*/
+
+
+/*CONTAINER SECTION HERE*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1400px;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+    /* padding-bottom: 100px; */
+   
+    
+}
+
+.box{
+    padding: 20px 25px;
+    background-color: #ffffff;
+    max-width: 350px;
+    margin: 15px;
+    border-radius: 5px;
+    min-height: 250px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  
+}
+
+
+.box::after{
+    content: '';
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background-color: purple;
+    position: absolute;
+}
+
+.one::after{
+    background-color: hsl(180, 62%, 55%);
+}
+
+.two::after{
+    background-color: hsl(0, 78%, 62%);
+}
+
+.three::after{
+    background-color: hsl(34, 97%, 64%);
+}
+
+.four::after{
+    background-color: hsl(212, 86%, 64%);
+}
+
+
+.box > h2{
+    font-family: poppins400;
+    margin-top: 10px;
+}
+
+.box > p{
+    margin: 10px 0 20px 0;
+}
+
+.box > img{
+   display: block;
+   margin-left: auto;
+}
+
+.push{
+    transform: translateY(50%);
+}
+
+/* FOOTER HERE */
+.attribution{
+    background-color: #000;
+    color: #ffffff;
+    padding: 1rem;
+    /* margin-top: 3rem; */
+    font-size: 15px;
+}
+
+.attribution a{
+    color: hsl(0, 0%, 98%);
+    font-family: poppins400;
+}
+
+
+@media (max-width: 1140px){
+    .container{
+        
+    padding-bottom: 130px;
+    }
+}
+
+@media (max-width: 759px) {
+    .push{
+        transform: translateY(0%);
+    }
+
+    .container{
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    header{
+        max-width: 300px;
+    }
+    h1{
+        font-size:20px;
+    }
+
+    header p{
+        font-size: 13px;
+    }
+}
+
